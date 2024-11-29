@@ -1,0 +1,61 @@
+Manifest-Version: 1.0
+Build-Jdk-Spec: 17
+Class-Path: cucumber-testng-7.14.0.jar apiguardian-api-1.1.2.jar cucumbe
+ r-core-7.14.0.jar cucumber-gherkin-7.14.0.jar cucumber-gherkin-messages
+ -7.14.0.jar gherkin-26.2.0.jar messages-22.0.0.jar tag-expressions-5.0.
+ 6.jar cucumber-expressions-16.1.2.jar datatable-7.14.0.jar cucumber-plu
+ gin-7.14.0.jar docstring-7.14.0.jar html-formatter-20.4.0.jar junit-xml
+ -formatter-0.2.0.jar ci-environment-9.2.0.jar testng-7.8.0.jar jcommand
+ er-1.82.jar jquery-3.6.1.jar junit-4.13.2.jar hamcrest-core-1.3.jar web
+ drivermanager-5.5.3.jar slf4j-api-2.0.7.jar gson-2.10.1.jar docker-java
+ -3.3.3.jar docker-java-core-3.3.3.jar docker-java-api-3.3.3.jar commons
+ -compress-1.21.jar bcpkix-jdk18on-1.75.jar bcprov-jdk18on-1.75.jar bcut
+ il-jdk18on-1.75.jar jcl-over-slf4j-1.7.30.jar docker-java-transport-htt
+ pclient5-3.3.3.jar docker-java-transport-3.3.3.jar jna-5.12.1.jar dec-0
+ .1.2.jar commons-lang3-3.13.0.jar httpclient5-5.2.1.jar httpcore5-5.2.j
+ ar httpcore5-h2-5.2.jar extentreports-5.1.1.jar rxjava-3.1.6.jar reacti
+ ve-streams-1.0.4.jar freemarker-2.3.32.jar lombok-1.18.26.jar httpclien
+ t-4.5.14.jar commons-logging-1.2.jar commons-codec-1.11.jar httpcore-4.
+ 4.16.jar json-20210307.jar jackson-databind-2.18.0.jar jackson-annotati
+ ons-2.18.0.jar jackson-core-2.18.0.jar cucumber-java-7.14.0.jar extentr
+ eports-cucumber7-adapter-1.14.0.jar klov-reporter-5.1.0.jar mongodb-dri
+ ver-3.6.4.jar mongodb-driver-core-3.6.4.jar bson-3.6.4.jar htmlextentre
+ porter-1.1.0.jar extent-pdf-report-2.12.0.jar cucumber-pdf-report-2.14.
+ 0.jar pdfbox-2.0.26.jar fontbox-2.0.26.jar xchart-3.8.0.jar VectorGraph
+ ics2D-0.13.jar graphics2d-0.30.jar animated-gif-lib-1.4.jar snakeyaml-2
+ .0.jar table-layout-1.5.1.jar rest-assured-cucumber-pdf-report-1.5.0.ja
+ r jsoup-1.15.3.jar extentreport-allure-annotation-1.0.2.jar extent-exce
+ l-report-1.4.0.jar selenium-java-4.15.0.jar selenium-api-4.15.0.jar sel
+ enium-chrome-driver-4.15.0.jar auto-service-annotations-1.1.1.jar selen
+ ium-chromium-driver-4.15.0.jar selenium-json-4.15.0.jar selenium-manage
+ r-4.15.0.jar selenium-devtools-v117-4.15.0.jar selenium-devtools-v118-4
+ .15.0.jar selenium-devtools-v119-4.15.0.jar selenium-devtools-v85-4.15.
+ 0.jar selenium-edge-driver-4.15.0.jar selenium-firefox-driver-4.15.0.ja
+ r selenium-http-4.15.0.jar failsafe-3.3.2.jar selenium-ie-driver-4.15.0
+ .jar selenium-remote-driver-4.15.0.jar opentelemetry-api-1.28.0.jar ope
+ ntelemetry-context-1.28.0.jar opentelemetry-exporter-logging-1.28.0.jar
+  opentelemetry-sdk-metrics-1.28.0.jar opentelemetry-extension-incubator
+ -1.28.0-alpha.jar opentelemetry-sdk-logs-1.28.0.jar opentelemetry-sdk-c
+ ommon-1.28.0.jar opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.j
+ ar opentelemetry-sdk-extension-autoconfigure-1.28.0.jar opentelemetry-a
+ pi-events-1.28.0-alpha.jar opentelemetry-sdk-trace-1.28.0.jar opentelem
+ etry-sdk-1.28.0.jar opentelemetry-semconv-1.28.0-alpha.jar byte-buddy-1
+ .14.5.jar selenium-os-4.15.0.jar commons-exec-1.3.jar selenium-safari-d
+ river-4.15.0.jar selenium-support-4.15.0.jar httpmime-4.5.13.jar hamcre
+ st-2.2.jar json-schema-validator-5.5.0.jar json-schema-validator-2.2.14
+ .jar jackson-coreutils-equivalence-1.0.jar jackson-coreutils-2.0.jar ms
+ g-simple-1.2.jar btf-1.3.jar json-schema-core-1.2.14.jar uri-template-0
+ .10.jar rhino-1.7.7.2.jar mailapi-1.6.2.jar joda-time-2.10.5.jar libpho
+ nenumber-8.11.1.jar jsr305-3.0.2.jar jopt-simple-5.0.4.jar guava-33.2.1
+ -jre.jar failureaccess-1.0.2.jar listenablefuture-9999.0-empty-to-avoid
+ -conflict-with-guava.jar checker-qual-3.42.0.jar error_prone_annotation
+ s-2.26.1.jar j2objc-annotations-3.0.0.jar json-simple-1.1.1.jar cucumbe
+ r-picocontainer-7.14.1.jar picocontainer-2.15.jar commons-io-2.11.0.jar
+  poi-3.17.jar commons-collections4-4.1.jar poi-ooxml-3.17.jar poi-ooxml
+ -schemas-3.17.jar xmlbeans-2.6.0.jar stax-api-1.0.1.jar curvesapi-1.04.
+ jar log4j-1.2.17.jar sikuli-api-1.2.0.jar sikuli-core-1.2.2.jar javacpp
+ -0.9.jar opencv-2.4.9-0.9.jar piccolo2d-extras-1.3.1.jar piccolo2d-core
+ -1.3.1.jar javafaker-1.0.2.jar snakeyaml-1.23-android.jar generex-1.0.2
+ .jar automaton-1.11-8.jar
+Created-By: Maven Integration for Eclipse
+

@@ -1,0 +1,56 @@
+stages:
+  - build
+  - test
+  - notify
+
+# Build Stage: Maven build
+build:
+  image: maven:3.8.4-jdk-11
+  stage: build
+  script:
+    - mvn clean install -DskipTests=true
+  artifacts:
+    paths:
+      - target/*.jar
+  only:
+    - main
+    - newBranch  # Branch you want to trigger the pipeline for
+
+# Test Stage: Run Cucumber tests
+test:
+  image: maven:3.8.4-jdk-11
+  stage: test
+  script:
+    - mvn test -Dcucumber.options="--tags @regression"  # Run Cucumber tests with tags
+  artifacts:
+    when: always
+    paths:
+      - target/cucumber-reports/  # This will store the test report artifacts
+  only:
+    - main
+    - newBranch  # Run tests only for specific branches
+
+# Notify Stage: Send email after tests
+notify:
+  image: python:3.8
+  stage: notify
+  script:
+    - pip install sendgrid  # Install SendGrid Python library
+    - |
+      import sendgrid
+      from sendgrid.helpers.mail import Mail, Email, To, Content
+
+      sendgrid_api_key = "$SENDGRID_API_KEY"  # Use GitLab CI/CD variable
+      sg = sendgrid.SendGridAPIClient(api_key=sendgrid_api_key)
+
+      from_email = Email("your-email@example.com")  # Replace with your email
+      to_email = To("your-gmail@gmail.com")  # Replace with your Gmail
+      subject = "GitLab CI/CD Test Results"
+      content = Content("text/plain", "Cucumber Test Results: [Insert test results here]")
+      mail = Mail(from_email, to_email, subject, content)
+
+      response = sg.send(mail)
+      print(response.status_code)
+  only:
+    - main
+    - newBranch  # Run notify stage after tests are completed

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="ChromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.runner.runnerClass">
+        <methods>
+          <include name="setBrowser"/>
+        </methods>
+      </class> <!-- com.runner.runnerClass -->
+      <class name="com.runner.runnerClass$RunnerClass">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.runner.runnerClass$RunnerClass -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
