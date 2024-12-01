@@ -1,0 +1,33 @@
+Here is a sample GitHub Actions workflow YAML file (cucumber.yml) that will set up a Java environment, install necessary dependencies, and run the Cucumber tests:
+
+yaml
+Copy code
+name: Run Cucumber Tests
+
+on: workflow_dispatch
+jobs:
+  run-cucumber-tests:
+    runs-on: windows-latest  # You can change this to any OS that supports your project needs
+
+    steps:
+    - name: Checkout the repository
+      uses: actions/checkout@v3
+
+    - name: Set up JDK (Java Development Kit)
+      uses: actions/setup-java@v3
+      with:
+        java-version: '11'   # Use the appropriate Java version that your project needs
+        distribution: 'adoptopenjdk'   # Choose OpenJDK distribution (you can also use 'zulu' or others)
+
+    - name: Set up Maven
+      uses: actions/setup-java@v3
+      with:
+        maven-version: '3.8.1'
+
+    - name: Install dependencies
+      run: mvn install -DskipTests=true  # Install the dependencies without running tests
+
+    - name: Run Cucumber Tests
+      run: mvn test -Dcucumber.options="--tags @SeleniumPractice"  # Run the tests based on the tag provided
+      # If you want to run all the tests, remove the `-Dcucumber.options="--tags @SeleniumPractice"`
+      # Or use the tag that matches the scenario you want to run
